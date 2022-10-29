@@ -1,0 +1,60 @@
+.img {
+  background-image: url("../../public/office-signup.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh !important;
+  padding: 0;
+}
+@media only screen and (max-width: 766px) {
+  .img {
+    display: none;
+  }
+}
+.registrationForm {
+  padding: 60px 0 0px 50px;
+  max-height: 100vh !important;
+  overflow-y: scroll;
+}
+.label {
+  font-weight: bold;
+}
+
+.formTitle {
+  margin-bottom: 30px;
+}
+
+.userInputField {
+  max-width: 300px !important;
+  margin-bottom: 25px;
+}
+.formCheckbox {
+  display: inline;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.checkboxText {
+  display: inline;
+  margin-left: 10px;
+  font-size: 13px;
+}
+.formChecks {
+  margin-bottom: 18px;
+}
+.signUpBtn {
+  display: block;
+  width: 300px !important;
+  background-color: black !important;
+  border: none;
+  margin-bottom: 66px;
+}
+.signUpBtn:hover {
+  background-color: rgb(44, 43, 43) !important;
+}
+
+@media only screen and (max-width: 766px) {
+  .userInputField {
+    width: 100%;
+    max-width: 500px;
+  }
+}

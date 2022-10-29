@@ -1,0 +1,92 @@
+.sideForm {
+  display: flex;
+  margin-top: 55px;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 766px) {
+  .sideForm {
+    order: 1;
+    padding: 50px 0 0 0;
+    align-items: center;
+  }
+}
+.formTitle {
+  margin: 10px 0px 20px 0;
+  color: rgba(128, 128, 128, 0.63);
+  font-size: 14px;
+}
+.label {
+  font-weight: bold;
+}
+.userInputField,
+.socialButton {
+  width: 300px;
+  margin-bottom: 20px;
+}
+.signInBtn {
+  display: block;
+  width: 300px !important;
+  background-color: black !important;
+  border: none;
+}
+.signInBtn:hover {
+  background-color: rgb(44, 43, 43) !important;
+}
+.socialButton {
+  margin-top: 20px;
+  border: 1px solid black !important;
+  background-color: white;
+  color: black;
+}
+.socialButton:hover {
+  background-color: rgb(250, 250, 250) !important;
+  color: black !important;
+}
+.google {
+  margin-right: 5px;
+}
+@media only screen and (max-width: 766px) {
+  .userInputField,
+  .socialButton {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+.formCheckbox {
+  display: inline;
+  margin-right: 6px;
+  margin-bottom: 30px;
+}
+.checkboxText {
+  display: inline;
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 40px;
+}
+.forgotPswrd {
+  display: inline;
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 40px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.signUp {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+.text {
+  font-size: 14px;
+}
+.line {
+  width: 100px;
+  height: 65px;
+  border: solid 3px #000;
+  border-color: #000 transparent transparent transparent;
+  border-radius: 75%/10px 10px 0 0;
+  margin: 5px 0 0 148px;
+}

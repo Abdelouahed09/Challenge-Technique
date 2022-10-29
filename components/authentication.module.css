@@ -1,0 +1,18 @@
+.leftSide {
+  padding: 0 !important;
+}
+.img1 {
+  background-image: url("../public/office.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh !important;
+  padding: 0;
+}
+@media only screen and (max-width: 766px) {
+  .img1 {
+    display: none;
+  }
+}
+.propertyContainer {
+  position: relative;
+}
