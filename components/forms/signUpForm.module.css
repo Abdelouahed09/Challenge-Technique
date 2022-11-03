@@ -9,6 +9,10 @@
   .img {
     display: none;
   }
+  .userInputField {
+    width: 100%;
+    max-width: 500px;
+  }
 }
 .registrationForm {
   padding: 60px 0 0px 50px;
@@ -50,11 +54,4 @@
 }
 .signUpBtn:hover {
   background-color: rgb(44, 43, 43) !important;
-}
-
-@media only screen and (max-width: 766px) {
-  .userInputField {
-    width: 100%;
-    max-width: 500px;
-  }
 }

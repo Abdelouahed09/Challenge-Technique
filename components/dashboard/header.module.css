@@ -1,0 +1,49 @@
+.btnGroup {
+  margin: 12px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn {
+  width: max-content;
+  background-color: #fff !important;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+}
+.btn:hover {
+  color: #383bff;
+}
+@media (max-width: 766px) {
+  .btn {
+    margin-left: 5px;
+  }
+}
+.btnRow {
+  font-size: 13px;
+  font-weight: bold;
+  border: 1px solid #000 !important;
+  background-color: #fff;
+  color: #000;
+}
+.btnRow:hover {
+  opacity: 0.8;
+}
+.filterIcon {
+  margin-bottom: 3px;
+}
+
+.tabGroup {
+  justify-content: center;
+  padding: 10px 0;
+  font-weight: 500;
+  font-size: 12px;
+  border: none !important;
+}
+.tab {
+  padding: 0 !important;
+  margin: 0 !important;
+}

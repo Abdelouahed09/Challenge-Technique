@@ -1,8 +1,9 @@
 import React, { useState, useContext } from "react";
-import { Row, Col, Form, Button } from "react-bootstrap";
+import { Col, Form, Button } from "react-bootstrap";
 import signUpFormStyle from "./signUpForm.module.css";
-// import { UserContext} from "../../context/context";
-import { Level } from "level";
+import { put } from "../../db/level";
+import { USER_DB } from "../../db/constant";
+import { useRouter } from "next/router";
 
 export default function SignUpForm() {
   const [firstname, setFirstName] = useState("");
@@ -11,23 +12,21 @@ export default function SignUpForm() {
   const [phonenumber, setPhoneNumber] = useState("");
   const [password, setPassword] = useState("");
   const [passwordtwo, setPasswordTwo] = useState("");
-  const [error, setError] = useState("");
 
+  const router = useRouter();
   const OnSubmitSignUp = async (e) => {
     e.preventDefault();
 
-    // Create a database
-    const db = new Level("example", { valueEncoding: "json" });
-
-    // Add an entry with key 'a' and value 1
-    const X = await db.put("a", 1);
-    console.log(X);
-
-    // Get value of key 'a': 1
-    // const value = await db.get('a')
+    await put(USER_DB, email, {
+      firstname,
+      lastname,
+      email,
+      phonenumber,
+      password,
+      passwordtwo,
+    });
+    router.push("/authentication/signin");
   };
-
-  //   const { postUser } = useContext(UserContext);
 
   return (
     <>
@@ -88,7 +87,7 @@ export default function SignUpForm() {
               Phone Number
             </Form.Label>
             <Form.Control
-              type="text"
+              type="number"
               className={signUpFormStyle.userInputField}
               onChange={(e) => setPhoneNumber(e.target.value)}
             />
