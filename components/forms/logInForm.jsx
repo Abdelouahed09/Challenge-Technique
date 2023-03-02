@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Row, Col, Form, Button } from "react-bootstrap";
 import logInFormStyle from "./logInForm.module.css";
 import { FcGoogle } from "react-icons/fc";
+import Link from "next/link";
 
 export default function LogInForm() {
   const [email, setEmail] = useState("");
