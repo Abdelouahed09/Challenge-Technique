@@ -2,12 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Row, Col, Form, Button } from "react-bootstrap";
 import logInFormStyle from "./logInForm.module.css";
 import { FcGoogle } from "react-icons/fc";
-import { get } from "../../db/level";
-import { useDispatch } from "react-redux";
-import { addUser } from "../../features/user/userSlice";
-import { useRouter } from "next/router";
-import { USER_DB } from "../../db/constant";
-import Link from "next/link";
 
 export default function LogInForm() {
   const [email, setEmail] = useState("");
