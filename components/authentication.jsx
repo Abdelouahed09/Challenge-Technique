@@ -27,7 +27,7 @@ export default function Auth() {
         xxs={12}
         className={StyleAuthentication.img1}
       >
-        <Slider />
+        {/* <Slider /> */}
       </Col>
     </>
   );

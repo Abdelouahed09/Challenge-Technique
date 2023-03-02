@@ -1,0 +1,99 @@
+.card {
+  border-radius: 8px;
+  padding: 0;
+  margin: 0;
+  border: none !important;
+}
+.card img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+.card:hover img {
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
+}
+.img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.profileImg {
+  border-radius: 100%;
+  width: 24px;
+  margin: 5px 3px 5px 4px;
+  box-shadow: 2px 4px #88888821;
+}
+@media only screen and (max-width: 766px) {
+  .profileImg {
+    width: 30px;
+    margin: 10px 5px;
+  }
+  .name {
+    font-size: 16px;
+  }
+  .icons {
+    font-size: 13px;
+  }
+}
+
+.article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cardBody {
+  padding-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.name {
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+.icons {
+  padding: 15px 0 1px 0;
+}
+.icons li {
+  font-size: 9px;
+  text-align: right;
+  list-style: none;
+  display: inline;
+}
+.icon {
+  margin: 1px;
+}
+.img:hover {
+  opacity: 0.6;
+}
+
+.likeIcon {
+  display: block;
+  margin: 0px auto 0px;
+  text-align: center;
+  background: #ed2553;
+  border-radius: 3px;
+  box-shadow: 0 10px 20px -8px rgb(240, 75, 113);
+  padding: 5px 8px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.likeIcon:hover {
+  transform: translateY(-3px);
+}
