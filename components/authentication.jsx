@@ -1,8 +1,8 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import StyleAuthentication from "./authentication.module.css";
 import LogInForm from "./forms/logInForm";
-import Slider from "./reviews/sliderReviews";
+// import Slider from "./reviews/sliderReviews";
 
 export default function Auth() {
   return (

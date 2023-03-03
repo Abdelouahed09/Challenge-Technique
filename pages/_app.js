@@ -11,7 +11,7 @@ function CHALLENGE({ Component, pageProps }) {
     <>
       <Provider store={store}>
         <Head>
-          <title>Challenge Technique</title>
+          <title>Unsplash V-2.0</title>
           <meta
             name="viewport"
             content="initial-scale=1.0, width=device-width"
