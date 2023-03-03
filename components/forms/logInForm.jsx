@@ -3,6 +3,8 @@ import { Row, Col, Form, Button } from "react-bootstrap";
 import logInFormStyle from "./logInForm.module.css";
 import { FcGoogle } from "react-icons/fc";
 import Link from "next/link";
+import { useDispatch } from "react-redux";
+import { useRouter } from "next/router";
 
 export default function LogInForm() {
   const [email, setEmail] = useState("");
@@ -77,11 +79,12 @@ export default function LogInForm() {
           </Button>
           <div className={logInFormStyle.text}>
             Don&apos;t have an account?
-            <Link href="/authentication/signup">
-              <a className={logInFormStyle.signUp}>
-                Sign up for free
-                <div className={logInFormStyle.line}></div>
-              </a>
+            <Link
+              href="/authentication/signup"
+              className={logInFormStyle.signUp}
+            >
+              Sign up for free
+              <div className={logInFormStyle.line}></div>
             </Link>
           </div>
         </Col>

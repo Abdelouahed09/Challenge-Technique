@@ -7,18 +7,6 @@ const postDb = new Level("./db/likeDb", { valueEncoding: "json" });
 const message = ["Ce compte a été bloqué.", "email or password incorrect"];
 let printedMessage = null;
 
-const UpdateLike = async (key, id) => {
-  try {
-    const value = await get(USER_DB, key);
-    value.LikedPic = [...value.LikedPic, id];
-    console.log(value);
-    await put(USER_DB, key, value);
-  } catch (error) {
-    throw new Error(error);
-  } finally {
-    printedMessage = null;
-  }
-};
 const put = async (db, key, value) => {
   try {
     switch (db) {
@@ -66,6 +54,19 @@ const get = async (db, key, password = null) => {
       } finally {
         printedMessage = null;
       }
+  }
+};
+
+const UpdateLike = async (key, id) => {
+  try {
+    const value = await get(USER_DB, key);
+    value.LikedPic = [...value.LikedPic, id];
+    console.log(value);
+    await put(USER_DB, key, value);
+  } catch (error) {
+    throw new Error(error);
+  } finally {
+    printedMessage = null;
   }
 };
 
