@@ -9,7 +9,7 @@ export default function Home() {
   useEffect(() => {
     if (!user) router.push("/authentication/signin");
     else router.push("/dashboard/listing");
-  }, []);
+  }, [router, user]);
 
   return (
     <>

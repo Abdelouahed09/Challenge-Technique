@@ -14,7 +14,7 @@ export default function Listing() {
     else {
       setLoading(false);
     }
-  }, []);
+  }, [router, user?.email]);
   if (loading) return <Loader />;
   else if (!loading && user?.email) {
     return (
